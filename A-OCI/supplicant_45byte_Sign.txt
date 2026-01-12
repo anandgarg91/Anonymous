@@ -122,12 +122,12 @@ nl80211: Clear possible state mismatch (94:bf:c4:0b:25:ec)
 wlp3s0: nl80211: MLME command failed: reason=2 ret=-1 (Operation not permitted)
 wlp3s0: BSS: Start scan result update 1
 wlp3s0: BSS: Add new id 0 BSSID 98:da:c4:3e:ee:4e SSID 'cyberes_5G' freq 5220
-wlp3s0: BSS: Add new id 1 BSSID 94:bf:c4:0b:25:ec SSID 'BITS-WIFI' freq 5200
+wlp3s0: BSS: Add new id 1 BSSID 94:bf:c4:0b:25:ec SSID 'B-WIFI' freq 5200
 wlp3s0: BSS: Add new id 2 BSSID 98:da:c4:3e:ee:4f SSID 'cyberes' freq 2472
-wlp3s0: BSS: Add new id 3 BSSID 94:bf:c4:0b:25:e8 SSID 'BITS-WIFI' freq 2447
-wlp3s0: BSS: Add new id 4 BSSID b8:50:01:8a:e8:40 SSID 'BITS-WIFI' freq 2462
+wlp3s0: BSS: Add new id 3 BSSID 94:bf:c4:0b:25:e8 SSID 'B-WIFI' freq 2447
+wlp3s0: BSS: Add new id 4 BSSID b8:50:01:8a:e8:40 SSID 'B-WIFI' freq 2462
 wlp3s0: BSS: Add new id 5 BSSID aa:06:18:62:2c:8b SSID 'wifipi' freq 2437
-wlp3s0: BSS: Add new id 6 BSSID b8:50:01:8c:4c:e0 SSID 'BITS-WIFI' freq 5220
+wlp3s0: BSS: Add new id 6 BSSID b8:50:01:8c:4c:e0 SSID 'B-WIFI' freq 5220
 wlp3s0: BSS: Add new id 7 BSSID 62:01:94:b9:23:ec SSID 'SmartLife-23EC' freq 2412
 BSS: last_scan_res_used=8/32
 wlp3s0: New scan results available (own=1 ext=0)
@@ -140,13 +140,13 @@ wlp3s0: radio_work_free('scan'@0x5606d611a550): num_active_works --> 0
 wlp3s0: Selecting BSS from priority group 0
 wlp3s0: 0: 98:da:c4:3e:ee:4e ssid='cyberes_5G' wpa_ie_len=0 rsn_ie_len=20 caps=0x1111 level=-46 freq=5220  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
+wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 2: 98:da:c4:3e:ee:4f ssid='cyberes' wpa_ie_len=0 rsn_ie_len=20 caps=0x1431 level=-32 freq=2472  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
+wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 4: b8:50:01:8a:e8:40 ssid='BITS-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
+wlp3s0: 4: b8:50:01:8a:e8:40 ssid='B-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 5: aa:06:18:62:2c:8b ssid='wifipi' wpa_ie_len=0 rsn_ie_len=20 caps=0x411 level=-48 freq=2437 
 wlp3s0:    selected based on RSN IE
@@ -278,7 +278,7 @@ nl80211: Mode IEEE 802.11b: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 24
 RTM_NEWLINK: ifi_index=3 ifname=wlp3s0 wext ifi_family=0 ifi_flags=0x1003 ([UP])
 nl80211: Drv Event 34 (NL80211_CMD_NEW_SCAN_RESULTS) received for wlp3s0
 wlp3s0: nl80211: New scan results available
-nl80211: Scan probed for SSID 'BITS-WIFI'
+nl80211: Scan probed for SSID 'B-WIFI'
 nl80211: Scan probed for SSID ''
 nl80211: Scan included frequencies: 2447 2462 5220
 wlp3s0: Event SCAN_RESULTS (3) received
@@ -352,17 +352,17 @@ wlp3s0: Scan results matching the currently selected network
 wlp3s0: Selecting BSS from priority group 0
 wlp3s0: 0: 98:da:c4:3e:ee:4e ssid='cyberes_5G' wpa_ie_len=0 rsn_ie_len=20 caps=0x1111 level=-45 freq=5220  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
+wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 2: 98:da:c4:3e:ee:4f ssid='cyberes' wpa_ie_len=0 rsn_ie_len=20 caps=0x1431 level=-32 freq=2472  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
+wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 4: b8:50:01:8a:e8:40 ssid='BITS-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
+wlp3s0: 4: b8:50:01:8a:e8:40 ssid='B-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 5: aa:06:18:62:2c:8b ssid='wifipi' wpa_ie_len=0 rsn_ie_len=20 caps=0x411 level=-48 freq=2437 
 wlp3s0:    skip - blacklisted (count=2 limit=0)
-wlp3s0: 6: b8:50:01:8c:4c:e0 ssid='BITS-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1011 level=-74 freq=5220 
+wlp3s0: 6: b8:50:01:8c:4c:e0 ssid='B-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1011 level=-74 freq=5220 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 7: 62:01:94:b9:23:ec ssid='SmartLife-23EC' wpa_ie_len=0 rsn_ie_len=0 caps=0x1 level=-44 freq=2412 
 wlp3s0:    skip - SSID mismatch
@@ -373,13 +373,13 @@ wlp3s0: 5: aa:06:18:62:2c:8b freq=2437 level=-48 snr=41 est_throughput=54000
 wlp3s0: Selecting BSS from priority group 0
 wlp3s0: 0: 98:da:c4:3e:ee:4e ssid='cyberes_5G' wpa_ie_len=0 rsn_ie_len=20 caps=0x1111 level=-45 freq=5220  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
+wlp3s0: 1: 94:bf:c4:0b:25:ec ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x111 level=-64 freq=5200 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 2: 98:da:c4:3e:ee:4f ssid='cyberes' wpa_ie_len=0 rsn_ie_len=20 caps=0x1431 level=-32 freq=2472  wps
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='BITS-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
+wlp3s0: 3: 94:bf:c4:0b:25:e8 ssid='B-WIFI' wpa_ie_len=0 rsn_ie_len=20 caps=0x431 level=-60 freq=2447 
 wlp3s0:    skip - SSID mismatch
-wlp3s0: 4: b8:50:01:8a:e8:40 ssid='BITS-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
+wlp3s0: 4: b8:50:01:8a:e8:40 ssid='B-WIFI' wpa_ie_len=24 rsn_ie_len=24 caps=0x1411 level=-62 freq=2462 
 wlp3s0:    skip - SSID mismatch
 wlp3s0: 5: aa:06:18:62:2c:8b ssid='wifipi' wpa_ie_len=0 rsn_ie_len=20 caps=0x411 level=-48 freq=2437 
 wlp3s0:    selected based on RSN IE
@@ -689,7 +689,7 @@ Delay radio work start until externally triggered scan completes
 RTM_NEWLINK: ifi_index=3 ifname=wlp3s0 wext ifi_family=0 ifi_flags=0x1003 ([UP])
 nl80211: Drv Event 34 (NL80211_CMD_NEW_SCAN_RESULTS) received for wlp3s0
 wlp3s0: nl80211: New scan results available
-nl80211: Scan probed for SSID 'BITS-WIFI'
+nl80211: Scan probed for SSID 'B-WIFI'
 nl80211: Scan probed for SSID ''
 nl80211: Scan included frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 2484 5180 5200 5220 5240 5260 5280 5300 5320 5500 5520 5540 5560 5580 5600 5620 5640 5660 5680 5700 5720 5745 5765 5785 5805 5825
 wlp3s0: Event SCAN_RESULTS (3) received
@@ -794,7 +794,7 @@ nl80211: Drv Event 38 (NL80211_CMD_ASSOCIATE) received for wlp3s0
 nl80211: Associate event
 nl80211: Associated on 2447 MHz
 nl80211: Associated with 94:bf:c4:0b:25:e8
-nl80211: Set drv->ssid based on scan res info to 'BITS-WIFI'
+nl80211: Set drv->ssid based on scan res info to 'B-WIFI'
 wlp3s0: Event ASSOC (0) received
 wlp3s0: Association info event
 req_ies - hexdump(len=119): 00 09 42 49 54 53 2d 57 49 46 49 01 08 02 04 0b 16 0c 12 18 24 32 04 30 48 60 6c 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 80 00 2d 1a 6e 19 1f ff 00 00 00 01 00 00 00 00 00 96 00 01 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 01 00 00 40 3b 15 51 51 52 53 54 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 7f 80 81 82 dd 07 00 50 f2 02 00 01 00
